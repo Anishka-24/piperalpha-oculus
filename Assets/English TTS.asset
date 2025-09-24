@@ -1,0 +1,559 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: English TTS
+  m_EditorClassIdentifier: 
+  _clientAccessToken: 6HFLJ6EGWEIQ2DTIZ2SP4GCDDGZPFBZ4
+  _appInfo:
+    name: testing
+    id: 2599176207083125
+    lang: en
+    isPrivate: 1
+    createdAt: 2025-08-29T05:26:53-0700
+    trainingStatus: 1
+    lastTrainDuration: 86
+    lastTrainedAt: 2025-09-08T01:56:25-0700
+    nextTrainAt: 2025-09-08T01:54:59-0700
+    intents:
+    - id: 1110209963972861
+      name: Exit_App
+      entities: []
+    - id: 1565216438191765
+      name: Get_AI_Analysis
+      entities: []
+    - id: 777996247923454
+      name: Get_Aftermath
+      entities: []
+    - id: 1481394036235415
+      name: Get_Cascading_Failures
+      entities: []
+    - id: 623178933952842
+      name: Get_Cause
+      entities: []
+    - id: 1116039803812766
+      name: Get_Emergency_Response
+      entities: []
+    - id: 1181407483796339
+      name: Get_Findings
+      entities: []
+    - id: 1450996972615684
+      name: Get_Glossary_Term
+      entities: []
+    - id: 796559459475058
+      name: Get_Human_Factors
+      entities: []
+    - id: 3109581925868830
+      name: Get_Incident_Overview
+      entities: []
+    - id: 24115903414776480
+      name: Get_Lessons_Learned
+      entities: []
+    - id: 1885247402427359
+      name: Get_Operational_Context
+      entities: []
+    - id: 760434636966399
+      name: Get_Regulations
+      entities: []
+    - id: 24141573032180015
+      name: Get_Rescue_Info
+      entities: []
+    - id: 955425223424116
+      name: Get_Safety_Case_Info
+      entities: []
+    - id: 1215289007033407
+      name: Get_Safety_Systems
+      entities: []
+    - id: 1531920758219976
+      name: Get_Timeline
+      entities: []
+    - id: 667771135753866
+      name: Load_Scene
+      entities: []
+    - id: 1751216799603890
+      name: Navigate_ControlRoom
+      entities: []
+    - id: 1117203840377521
+      name: Navigate_EngineRoom
+      entities: []
+    - id: 1241834124413135
+      name: Navigate_EscapeRoute
+      entities: []
+    - id: 4329709940687160
+      name: Navigate_HeliDeck
+      entities: []
+    - id: 1150025503841330
+      name: Navigate_LivingQuarters
+      entities: []
+    - id: 1874437930084348
+      name: Navigate_MedBay
+      entities: []
+    - id: 1328176608798830
+      name: Navigate_PumpRoom
+      entities: []
+    - id: 1551538796013541
+      name: Navigate_To_Location
+      entities: []
+    - id: 1132800625384241
+      name: Pause_Simulation
+      entities: []
+    - id: 1252601416644200
+      name: Restart_Scene
+      entities: []
+    - id: 787395113675837
+      name: Resume_Simulation
+      entities: []
+    - id: 2027359931336412
+      name: Stop_Simulation
+      entities: []
+    - id: 4079692685624414
+      name: get_overview
+      entities: []
+    - id: 594683040332228
+      name: goodbye_user
+      entities: []
+    - id: 1913979362508612
+      name: greet_user
+      entities: []
+    - id: 1979114159570230
+      name: highlight_module
+      entities: []
+    - id: 653987327751745
+      name: play_simulation
+      entities: []
+    - id: 1134621481898250
+      name: quiz_user
+      entities: []
+    - id: 1392472519257759
+      name: repeat_last_answer
+      entities: []
+    - id: 1053564860050734
+      name: toggle_annotations
+      entities: []
+    entities:
+    - name: Casualty_Data
+      id: 1492981971885228
+      lookups:
+      - free-text
+      roles:
+      - name: Casualty_Data
+        id: 813738257889648
+      keywords: []
+    - name: Cause_Type
+      id: 795138776399917
+      lookups:
+      - keywords
+      roles:
+      - name: Cause_Type
+        id: 681268674225549
+      keywords: []
+    - name: Custom_DateTime
+      id: 4159019744243530
+      lookups:
+      - keywords
+      roles:
+      - name: Custom_DateTime
+        id: 760427970293077
+      keywords: []
+    - name: Equipment
+      id: 2777756299081917
+      lookups:
+      - keywords
+      roles:
+      - name: Equipment
+        id: 1436452367562679
+      keywords: []
+    - name: Failure_Type
+      id: 24909763225275427
+      lookups:
+      - keywords
+      roles:
+      - name: Failure_Type
+        id: 1847542576108201
+      keywords: []
+    - name: Person
+      id: 750617104558668
+      lookups:
+      - free-text
+      roles:
+      - name: Person
+        id: 1090771516512153
+      keywords: []
+    - name: Regulation
+      id: 10062888123817004
+      lookups:
+      - keywords
+      roles:
+      - name: Regulation
+        id: 1128782179147163
+      keywords: []
+    - name: Safety_Term
+      id: 801258256190984
+      lookups:
+      - keywords
+      roles:
+      - name: Safety_Term
+        id: 1428689631581167
+      keywords: []
+    - name: System
+      id: 772106128754562
+      lookups:
+      - keywords
+      roles:
+      - name: System
+        id: 560457190423474
+      keywords: []
+    - name: Training_Aspect
+      id: 25082254868025834
+      lookups:
+      - keywords
+      roles:
+      - name: Training_Aspect
+        id: 1552400206125651
+      keywords: []
+    - name: Vessel
+      id: 2513650755667867
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: Vessel
+        id: 639265995888874
+      keywords: []
+    - name: glossary_term
+      id: 1090820319871945
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: glossary_term
+        id: 811988484846191
+      keywords: []
+    - name: module
+      id: 752880404326890
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: module
+        id: 1401085290958708
+      keywords: []
+    - name: navigate_location
+      id: 659729236654767
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: navigate_location
+        id: 1421409532892680
+      keywords: []
+    - name: scene
+      id: 24908647575426083
+      lookups:
+      - keywords
+      roles:
+      - name: scene
+        id: 1299252725196187
+      keywords: []
+    traits:
+    - name: wit$greetings
+      id: 5900cc2d-41b7-45b2-b21f-b950d3ae3c5c
+      values:
+      - id: 547401529279585
+        value: true
+    versionTags: []
+    voices:
+    - name: wit$Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: wit$Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: wit$Cody
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Remi
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cam
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Connor
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Railey
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cael
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Carl
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rubie
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Overconfident
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Disaffected
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Hollywood
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Trendy
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Baby
+      locale: en_US
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Surfer
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Southern Accent
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Kenyan Accent
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Kid
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Villain
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rosie
+      locale: en_CA
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Colin
+      locale: en_CA
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Pirate
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$British Butler
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Whimsical
+      locale: en_GB
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Wizard
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cockney Accent
+      locale: en_GB
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+  _configData: []
+  _configurationId: 94fec894-bf67-460d-a150-d23505a6dd08
+  timeoutMS: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-09dcbfaa-ab04-4e98-93d8-e591940dda09.json
+  excludedAssemblies:
+  - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  relaxedResolution: 0
